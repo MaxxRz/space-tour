@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./previrew.png)
+![](./preview.png)
 
 
 ### Links
