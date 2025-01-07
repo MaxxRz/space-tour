@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bellefair&family=Khand:wght@400;500&family=Noto+Sans:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body data-size="0">
+
+
+    <div class="componentNav"></div>
+    <div class="container containerMid containerIndex">
+        <div class="homeTitle">
+            <span class="fontSub">SO, YOU WANT TO TRAVEL TO</span>
+            <h1>SPACE</h1>
+        </div>
+        <div class="homeDescription">
+            <p>Let’s face it; if you want to go to space, you might as well genuinely go to
+                outer space and not hover kind of on the edge of it. Well sit back, and relax
+                because we’ll give you a truly out of this world experience!
+            </p>
+        </div>
+        <div class="containerBall">
+            <div class="ball">
+                <span>EXPLORE</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="scripts/nav.js"></script>
+    <script type="module" src="scripts/dataJson.js"></script>
+    <script type="module">
+        import { changeBackground, changeBackgroundResize } from './scripts/dataJson.js';
+
+        changeBackground('home');
+        changeBackgroundResize('home');
+
+        /* !!!! BALL INDEX MOVE !!!!! */
+        const ball = document.querySelector('.ball');
+
+        const moveBall = (max, min) => {
+            let positionY = Math.floor(Math.random() * (max - min) + min);
+            let positionX = Math.floor(Math.random() * (max - min) + min);
+
+            ball.style.transform = `translate(${positionX}px, ${positionY}px)`;
+        }
+
+        setInterval(moveBall, 700, -5, 5);
+
+        changeBackground('home');
+
+    </script>
+
+
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>

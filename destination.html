@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bellefair&family=Khand:wght@400;500&family=Noto+Sans:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body data-size="0">
+
+
+    <div class="componentNav"></div>
+    <div class="container">
+        <h5 class="titlePage"><span>01</span>PICK YOUR DESTINATION</h5>
+        <div class="ContainerPlanet containerMid">
+            <div class="imgPlanet ">
+                <div class="planet">
+                    <img data-change="images" src="assets/destination/image-moon.png" alt="Moon">
+                </div>
+            </div>
+            <ul class="planetsNames">
+                <li><button data-number="0" class="fontSub btnPlanetActiv">Moon</button></li>
+                <li><button data-number="1" class="fontSub ">Mars</button></li>
+                <li><button data-number="2" class="fontSub">Europa</button></li>
+                <li><button data-number="3" class="fontSub">Titan</button></li>
+            </ul>
+            <div class="">
+                <div class="planetDescription">
+                    <div>
+                        <h2 class="planetNameSelected" data-change="name">Moon</h2>
+                        <p data-change="description">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="planetData">
+                <div>
+                    <span class="fontSub">AVG. DISTANCE</span>
+                    <div class="planetDistance">
+                        <div>
+                            <P data-change="distance">384,400 km</P>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <span class="fontSub">EST. TRAVEL TIME</span>
+                    <div class="planetTravel">
+                        <div>
+                            <P data-change="travel">3 days</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/nav.js"></script>
+    <script type="module" src="scripts/dataJson.js"></script>
+    <script type="module" src="scripts/destination.js"></script>
+
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
