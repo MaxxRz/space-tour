@@ -2,7 +2,7 @@
 // obtener los datos JSON
 async function getDataJson(page) {
     try {
-        const response = await fetch("../assets/data.json");
+        const response = await fetch("./assets/data.json");
 
         if (!response.ok) {
             throw new Error('Error');
@@ -24,17 +24,17 @@ export function changeBackground(pageName) {
 
     if (document.body.offsetWidth <= 480 && document.body.dataset.size != "sm") {
         document.body.dataset.size = "sm";
-        document.body.style.backgroundImage = `url("../assets/${pageName}/background-${pageName}-mobile.jpg")`;
+        document.body.style.backgroundImage = `url("./assets/${pageName}/background-${pageName}-mobile.jpg")`;
         
         return 
     } else if (document.body.offsetWidth > 480  && document.body.offsetWidth < 770 && document.body.dataset.size != "md") {
         document.body.dataset.size = "md";
-        document.body.style.backgroundImage = `url("../assets/${pageName}/background-${pageName}-tablet.jpg")`;
+        document.body.style.backgroundImage = `url("./assets/${pageName}/background-${pageName}-tablet.jpg")`;
 
         return;
     }  else if(document.body.offsetWidth >= 770  && document.body.dataset.size != "lg"){
         document.body.dataset.size = "lg";
-        document.body.style.backgroundImage = `url("../assets/${pageName}/background-${pageName}-desktop.jpg")`;
+        document.body.style.backgroundImage = `url("./assets/${pageName}/background-${pageName}-desktop.jpg")`;
     } 
 }
 

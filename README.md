@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/MaxxRz/space-tour)
-- Live Site URL: [Add live site URL here](https://github.com/MaxxRz/space-tour/)
+- Live Site URL: [Add live site URL here](https://maxxrz.github.io/space-tour/)
 
 ## My process
 
